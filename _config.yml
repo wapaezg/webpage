@@ -26,6 +26,7 @@ defaults:
       type: posts
     values:
       layout: post
+      math: true
 
 # Files Jekyll should not copy into the built site
 exclude:
