@@ -2,6 +2,14 @@ title: Páez Math
 description: Personal page of Walter Andrés Páez Gaviria — mathematics, languages and more.
 author: Walter Andrés Páez Gaviria
 
+# Giscus comments (fill these in from https://giscus.app after enabling Discussions)
+# Comments stay hidden until repo_id and category_id are both set.
+giscus:
+  repo: wapaezg/webpage
+  repo_id: "R_kgDOSUH0nA"
+  category: "Announcements"
+  category_id: "DIC_kwDOSUH0nM4DKebZ"
+
 # Build settings
 markdown: kramdown
 kramdown:
@@ -25,4 +33,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - "*.JPG"   # keep the heavy originals out of the deployed site (optimized .webp are used instead)
