@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog.html
+math: true
 ---
 <section class="blog-index">
     <h2>Blog</h2>
@@ -13,7 +14,7 @@ permalink: /blog.html
         <li>
             <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+            {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html }}</p>{% endif %}
         </li>
         {% endfor %}
     </ul>
