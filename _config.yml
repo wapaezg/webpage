@@ -1,0 +1,28 @@
+title: Páez Math
+description: Personal page of Walter Andrés Páez Gaviria — mathematics, languages and more.
+author: Walter Andrés Páez Gaviria
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null   # We render math with MathJax in the browser, not at build time
+
+# Permalinks for blog posts: /blog/2026/11/05/my-post-title/
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections / defaults
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+
+# Files Jekyll should not copy into the built site
+exclude:
+  - optimize_images.py
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "*.JPG"   # keep the heavy originals out of the deployed site (optimized .webp are used instead)
