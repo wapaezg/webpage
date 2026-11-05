@@ -149,6 +149,12 @@ nav .right a span {
     justify-content: right;
 }
 
+.headshot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* SECTION: list-section */
 
 .list-section {
